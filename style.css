@@ -65,7 +65,7 @@ body.dark-theme {
 .toast {
     border-radius: 10px;
 }
-/* Add custom styles for dark and light mode */
+
 .light-mode {
     background-color: #f8f9fa;
     color: #212529;
@@ -76,7 +76,6 @@ body.dark-theme {
     color: #f8f9fa;
 }
 
-/* Customize emoji appearance */
 #emoji {
     font-size: 2rem;
     display: inline-block;
@@ -87,7 +86,6 @@ body.dark-mode #emoji {
     background-color: #6c757d;
 }
 
-/* Floating Theme Toggle button */
 .floating-theme-toggle {
     position: fixed;
     top: 20px;

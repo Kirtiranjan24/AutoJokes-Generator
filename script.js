@@ -4,7 +4,6 @@ const getJokeBtn = document.getElementById('getJokeBtn');
 const getFlirtBtn = document.getElementById('getFlirtBtn');
 const copyBtn = document.getElementById('copyBtn');
 const toastNotification = document.getElementById('toastNotification');
-// Theme Toggle Logic
 const themeToggleButton = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
@@ -24,7 +23,7 @@ themeToggleButton.addEventListener('click', function()  {
     }
 });
 
-// Example functions for handling jokes and flirting lines (you will need to integrate actual APIs)
+
 document.getElementById('getJokeBtn').addEventListener('click', () => {
     const jokeDisplay = document.getElementById('jokeDisplay');
     jokeDisplay.textContent = 'Here is a fun joke!';
@@ -42,7 +41,6 @@ function fetchJoke() {
     const category = document.querySelector('input[name="category"]:checked').value;
     let url = '';
 
-    // Handling different APIs based on selected category
     if (category === 'random') {
         url = 'https://api.chucknorris.io/jokes/random';
     } else if (category === 'dad') {
@@ -50,7 +48,7 @@ function fetchJoke() {
     } else if (category === 'programming') {
         url = 'https://official-joke-api.appspot.com/random_joke';
     } else {
-        url = 'https://api.chucknorris.io/jokes/random'; // Default to random if nothing selected
+        url = 'https://api.chucknorris.io/jokes/random'; 
     }
 
     jokeDisplay.textContent = 'Loading...';
