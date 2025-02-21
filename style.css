@@ -1,0 +1,106 @@
+
+:root {
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --transition-speed: 0.3s;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.floating-theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+}
+.floating-theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.category-container label {
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.category-container input {
+    margin-right: 8px;
+}
+
+.content-display {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.toast {
+    border-radius: 10px;
+}
+/* Add custom styles for dark and light mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.dark-theme {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+/* Customize emoji appearance */
+#emoji {
+    font-size: 2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode #emoji {
+    background-color: #6c757d;
+}
+
+/* Floating Theme Toggle button */
+.floating-theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 100;
+}
+.btn-outline-light {
+    border: 2px solid #f0f0f0;
+    border-radius: 50%;
+}
+
+.shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
